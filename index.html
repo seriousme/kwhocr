@@ -7,17 +7,20 @@
   <body>
     <div class="page">
       <div class="container">
-        <p class="gitHub">
-          view source on
-          <a href="https://github.com/seriousme/kwhocr">GitHub</a>
-        </p>
-        <h1>kWh OCR</h1>
-        <p>Reading a electricity meter using a simple OCR algorithm.</p>
-        <div class="action">
+        <nav>
+          <a href="https://github.com/seriousme/kwhocr"
+            >view source</a
+          >
+        </nav>
+        <header>
+          <h1>kWh OCR</h1>
+          <p>Reading a electricity meter using a simple OCR algorithm.</p>
+        </header>
+        <main>
           <button id="button">Start</button>
           <p id="result"></p>
-        </div>
-        <canvas id="canvas" width="800" height="540"></canvas>
+          <canvas id="canvas" width="800" height="540"></canvas>
+        </main>
       </div>
     </div>
     <script src="kwhocr.js"></script>
