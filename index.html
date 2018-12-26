@@ -2,15 +2,24 @@
 <html>
   <head>
     <title>kWh OCR</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>kWh OCR</h1>
-    <p>Reading a electricity meter using a simple OCR algorithm</p>
-    <button id="button">Start</button>
-    <p>Scan result: <span id="result"></span></p>
-
-    <canvas id="canvas" width="800" height="540"></canvas>
+    <div class="page">
+      <div class="container">
+        <p class="gitHub">
+          view source on
+          <a href="https://github.com/seriousme/kwhocr">GitHub</a>
+        </p>
+        <h1>kWh OCR</h1>
+        <p>Reading a electricity meter using a simple OCR algorithm.</p>
+        <div class="action">
+          <button id="button">Start</button>
+          <p id="result"></p>
+        </div>
+        <canvas id="canvas" width="800" height="540"></canvas>
+      </div>
+    </div>
     <script src="kwhocr.js"></script>
-    <p>View source on <a href="https://github.com/seriousme/kwhocr">GitHub</a></p>
   </body>
 </html>

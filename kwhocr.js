@@ -298,7 +298,7 @@ function* stepper() {
   yield "Parse segments";
   const numbers = trimmedSegments.map(item => parseSegment(item));
   const scanResult = Number(numbers.join(""));
-  result.innerHTML = scanResult;
+  result.innerHTML = `Scanresult: ${scanResult}`;
   yield "Done";
 }
 
